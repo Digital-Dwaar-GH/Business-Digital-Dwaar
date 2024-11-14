@@ -33,7 +33,8 @@ const Carousel = ({ className, children }: Props) => {
       loop: true,
       align: "center",
       skipSnaps: false,
-    }[(ClassNames(), Autoplay())]
+    },
+    [ClassNames(), Autoplay()]
   );
   const onSelect = useCallback(() => {
     if (!emblaApi) return;
